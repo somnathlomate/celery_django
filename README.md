@@ -1,6 +1,7 @@
-# celery_django1. Install dependencies like celery, celery-beat
- 2. specify SQS in the broker URL  broker_url = 'sqs://aws_access_key_id:aws_secret_access_key@'                    
- 3. Configure the broker_transport_options setting:                                                                       
+# celery_django
+1. Install dependencies like celery, celery-beat
+2. specify SQS in the broker URL  broker_url = 'sqs://aws_access_key_id:aws_secret_access_key@'                    
+3. Configure the broker_transport_options setting:                                                                       
  BROKER_TRANSPORT_OPTIONS = {
     'region': 'region name',
     'visibility_timeout': 60,  # 1 minutes
